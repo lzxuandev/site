@@ -356,6 +356,14 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 640px) {
