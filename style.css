@@ -268,8 +268,7 @@ a {
 }
 
 .main-home {
-  transform: translateY(5rem);
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: 5rem;
 }
 
@@ -371,7 +370,7 @@ a {
 }
 
 .blog-content pre code {
-  color: #86efac;
+  color: hsl(180, 1.7%, 76.5%);
 }
 
 .blog-content .tech-icons {
@@ -764,36 +763,6 @@ a {
   font-size: 0.875rem;
   color: hsl(0, 0%, 55%);
 }
-
-/* ============================================================== */
-/*  页脚                                                          */
-/* ============================================================== */
-.footer {
-  width: 100%;
-  margin-top: 5rem;
-  color: hsl(0, 0%, 55%);
-}
-
-.footer-divider {
-  width: 100%;
-  border: none;
-  border-top: 1px solid hsl(0, 0%, 55%);
-  opacity: 0.1;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 6rem;
-  gap: 0.25rem;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 0.875rem;
-  opacity: 0.7;
-}
-
-.footer-made { opacity: 0.9; }
 
 /* ============================================================== */
 /*  页面切换过渡（View Transitions API - 现代浏览器平滑切换）       */
