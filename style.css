@@ -229,7 +229,7 @@ a {
 @media (max-width: 639px) {
   .navbar { display: none; }
   .mobile-nav-btn { display: block; }
-  .main-home { margin-top: 3rem; }
+  .main-home { margin-top: 1rem; }
 }
 
 /* ===== 头部社交图标 ===== */
