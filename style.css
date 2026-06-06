@@ -458,6 +458,18 @@ a {
   flex: 1;
 }
 
+.hero-image {
+  width: 200px;
+  height: auto;
+  border-radius: 0.75rem;
+  opacity: 0.6;
+  transition: opacity 1s;
+  flex-shrink: 0;
+}
+
+.hero-image:hover {
+  opacity: 0.9;
+}
 
 @media (min-width: 1024px) {
   .hero-section { width: 100%; }
