@@ -577,6 +577,115 @@ a {
 }
 
 /* ============================================================== */
+/*  GitHub 统计                                                   */
+/* ============================================================== */
+.github-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.2px rgb(140, 140, 140);
+}
+
+.github-stats-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.gh-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.875rem 0.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 1.2px rgb(140, 140, 140);
+  transition: box-shadow 0.3s, transform 0.2s;
+  cursor: default;
+}
+
+.gh-card:hover {
+  box-shadow: 0 0 3px rgb(140, 140, 140);
+  transform: translateY(-1px);
+}
+
+.gh-card-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.gh-label {
+  font-size: 0.6875rem;
+  opacity: 0.45;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.gh-value {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #bbf7d0;
+}
+
+.github-top-langs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.gh-subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.gh-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.gh-lang-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  border: 1px solid hsla(0, 0%, 55%, 0.25);
+  background: rgba(242, 242, 242, 0.04);
+  font-size: 0.8125rem;
+  color: hsl(0, 0%, 60%);
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.gh-lang-item:hover {
+  border-color: hsla(0, 0%, 55%, 0.5);
+  background: rgba(242, 242, 242, 0.08);
+}
+
+.gh-lang-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ============================================================== */
 /*  About Me 卡片                                                 */
 /* ============================================================== */
 .card {

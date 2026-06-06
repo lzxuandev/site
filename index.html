@@ -104,8 +104,40 @@
 
       </section>
 
-      <!-- ===== 下半部分：About Me + 技能标签 ===== -->
+      <!-- ===== 下半部分：GitHub 统计 + About Me + 技能标签 ===== -->
       <section class="two-column">
+
+        <!-- ===== 左边：GitHub 统计 ===== -->
+        <div class="github-stats">
+          <h2 class="github-stats-title">📊 GitHub Stats</h2>
+          <div class="github-stats-grid" id="github-stats">
+            <div class="gh-card">
+              <svg class="gh-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <span class="gh-label">Repos</span>
+              <span class="gh-value" id="gh-repos">-</span>
+            </div>
+            <div class="gh-card">
+              <svg class="gh-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span class="gh-label">Stars</span>
+              <span class="gh-value" id="gh-stars">-</span>
+            </div>
+            <div class="gh-card">
+              <svg class="gh-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span class="gh-label">Followers</span>
+              <span class="gh-value" id="gh-followers">-</span>
+            </div>
+            <div class="gh-card">
+              <svg class="gh-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span class="gh-label">Following</span>
+              <span class="gh-value" id="gh-following">-</span>
+            </div>
+          </div>
+          <div class="github-top-langs">
+            <h3 class="gh-subtitle">Top Languages</h3>
+            <div class="gh-langs" id="gh-langs">Loading...</div>
+          </div>
+        </div>
+
         <aside class="two-column-right" style="width: 100%;">
 
           <!-- ===== About Me 卡片 ===== -->
@@ -163,6 +195,46 @@
     function toggleMobileMenu() {
       document.getElementById('mobile-menu').classList.toggle('open');
     }
+
+    // GitHub 统计数据
+    async function fetchGitHubStats() {
+      try {
+        const userRes = await fetch('https://api.github.com/users/lzxuandev');
+        const user = await userRes.json();
+        document.getElementById('gh-repos').textContent = user.public_repos;
+        document.getElementById('gh-followers').textContent = user.followers;
+        document.getElementById('gh-following').textContent = user.following;
+
+        const reposRes = await fetch('https://api.github.com/users/lzxuandev/repos?per_page=100');
+        const repos = await reposRes.json();
+        const stars = repos.reduce((sum, r) => sum + r.stargazers_count, 0);
+        document.getElementById('gh-stars').textContent = stars;
+
+        // 统计语言
+        const langCount = {};
+        for (const repo of repos) {
+          if (repo.language) {
+            langCount[repo.language] = (langCount[repo.language] || 0) + 1;
+          }
+        }
+        const sorted = Object.entries(langCount).sort((a, b) => b[1] - a[1]).slice(0, 8);
+        const total = sorted.reduce((s, [, c]) => s + c, 0);
+        const langColors = {
+          C: '#555555', 'C++': '#f34b7d', Java: '#b07219', Python: '#3572A5',
+          HTML: '#e34c26', CSS: '#563d7c', JavaScript: '#f1e05a', TypeScript: '#3178c6',
+          Shell: '#89e051', Makefile: '#427819', CMake: '#DA3434', Kotlin: '#A97BFF',
+          Lua: '#000080', Rust: '#dea584', Go: '#00ADD8', Dart: '#00B4AB',
+          Swift: '#F05138', Ruby: '#701516', PHP: '#4F5D95', 'Jupyter Notebook': '#DA5B0F',
+        };
+        document.getElementById('gh-langs').innerHTML = sorted.map(([lang, count]) =>
+          `<span class="gh-lang-item"><span class="gh-lang-dot" style="background:${langColors[lang] || '#888'}"></span>${lang} ${Math.round(count / total * 100)}%</span>`
+        ).join('');
+      } catch {
+        document.getElementById('gh-langs').textContent = 'Failed to load';
+      }
+    }
+    fetchGitHubStats();
+
     new Typed('#typed-text', {
       strings: ["I'm ZhiXuan"],  // ★ 改成你想显示的文字
       typeSpeed: 90,
