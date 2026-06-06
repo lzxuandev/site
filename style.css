@@ -80,20 +80,15 @@ a {
 /* ============================================================== */
 .header {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto 1fr;
+  align-items: center;
   width: 100%;
-}
-
-@media (min-width: 640px) {
-  .header { grid-template-columns: repeat(4, 1fr); }
 }
 
 .header-left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  grid-column: span 1;
 }
 
 .header-right {
@@ -113,10 +108,6 @@ a {
 
 .avatar-img:hover {
   opacity: 0.9;
-}
-
-.avatar-img.home {
-  transform: translateY(5rem) scale(1.5);
 }
 
 /* ===== 导航栏（zephyrlin.me 风格药丸导航） ===== */
@@ -469,6 +460,17 @@ a {
 
 .hero-image:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-image {
+    width: 160px;
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
