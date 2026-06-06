@@ -34,7 +34,14 @@
           </li>
         </ul>
       </nav>
+
+      <button class="mobile-nav-btn" onclick="toggleMobileMenu()">Blog ▾</button>
     </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="blog.html" class="mobile-menu-link active">Blog</a>
+    </div>
 
     <!-- ============================================================ -->
     <!-- Blog 内容                                                    -->
@@ -45,7 +52,7 @@
         <h2>Hi there 👋</h2>
 
         <p>
-          This is lzxuandev and I am a Computer Science student based in Malaysia with a deep passion for low-level systems programming. <em>I embrace the philosophy of keeping everything simple and stupid.</em>
+          This is lzx and I am a Computer Science student based in Malaysia with a deep passion for low-level systems programming. <em>I embrace the philosophy of keeping everything simple and stupid.</em>
         </p>
 
         <br />
@@ -115,6 +122,12 @@ printf("Thanks for dropping by, hope you find some of my work interesting.\n");<
     </footer>
 
   </div>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    }
+  </script>
 
 </body>
 </html>

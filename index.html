@@ -47,7 +47,16 @@
           </li>
         </ul>
       </nav>
+
+      <!-- ===== 手机菜单按钮 ===== -->
+      <button class="mobile-nav-btn" onclick="toggleMobileMenu()">Home ▾</button>
     </header>
+
+    <!-- ===== 手机下拉菜单 ===== -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html" class="mobile-menu-link active">Home</a>
+      <a href="blog.html" class="mobile-menu-link">Blog</a>
+    </div>
 
     <!-- ============================================================ -->
     <!-- 主体内容（main）                                               -->
@@ -151,6 +160,9 @@
   <!--  ★ 要改打字内容，编辑下面 strings 数组里的文字即可              -->
   <!-- ============================================================ -->
   <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    }
     new Typed('#typed-text', {
       strings: ["I'm ZhiXuan"],  // ★ 改成你想显示的文字
       typeSpeed: 90,
