@@ -1,0 +1,32 @@
+.hero-name {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 54px;
+  background: linear-gradient(to top, hsl(0, 0%, 55%), hsl(180, 1.7%, 76.5%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero-tags {
+  margin-bottom: 2.5rem;
+  font-size: 26px;
+  background: linear-gradient(to right, #bbf7d0, #86efac, #bbf7d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.6;
+  width: fit-content;
+}
+
+.hero-desc {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background: linear-gradient(to bottom, hsl(180, 1.7%, 76.5%), hsl(0, 0%, 55%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+}

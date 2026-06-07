@@ -9,8 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/lzx.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components/navbar.css" />
+  <link rel="stylesheet" href="assets/css/components/socials.css" />
+  <link rel="stylesheet" href="assets/css/pages/blog.css" />
+  <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg" />
 </head>
 <body>
 
@@ -19,13 +23,13 @@
     <!-- ====== 页面顶部：头像 + 导航 + 社交链接 ====== -->
     <header class="header">
       <div class="header-left">
-        <img src="images/lzx.jpeg" alt="avatar" class="avatar-img" width="60" height="60" />
+        <img src="assets/images/logo.jpeg" alt="avatar" class="avatar-img" width="60" height="60" />
       </div>
 
       <nav class="navbar">
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
           </li>
           <li class="active">
             <a href="blog.html">Blog</a>
@@ -35,13 +39,7 @@
         </ul>
       </nav>
 
-      <button class="mobile-nav-btn" onclick="toggleMobileMenu()">Blog ▾</button>
     </header>
-
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="index.html" class="mobile-menu-link">Home</a>
-      <a href="blog.html" class="mobile-menu-link active">Blog</a>
-    </div>
 
     <!-- ============================================================ -->
     <!-- Blog 内容                                                    -->
@@ -52,7 +50,7 @@
         <h2>Hi there 👋</h2>
 
         <p>
-          This is lzx and I am a Computer Science student based in Malaysia with a deep passion for low-level systems programming. <em>I embrace the philosophy of keeping everything simple and stupid.</em>
+          This is lzx and I am a Computer Science student based in Malaysia with a deep passion for mid-level systems programming. <em>I embrace the philosophy of keeping everything simple and stupid. </em>
         </p>
 
         <br />
@@ -83,17 +81,21 @@ printf("Thanks for dropping by, hope you find some of my work interesting.\n");<
 
         <br />
 
-        <div class="tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" alt="C" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40" alt="Java" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" width="40" height="40" alt="Qt" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg" width="40" height="40" alt="GTK" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="40" height="40" alt="Android" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code" />
+        <div align="left">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" alt="C" />&nbsp;
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++" />&nbsp;
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40" alt="Java" />&nbsp;
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python" />&nbsp;
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png?_=20170517184425" width="40" height="40" alt="html" />&nbsp;
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/960px-CSS3_logo_and_wordmark.svg.png?_=20160530175649" width="40" height="40" alt="css" />&nbsp;
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png?_=20120221235433" width="40" height="40" alt="javascript" />&nbsp;
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" width="40" height="40" alt="Qt" />&nbsp;
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg" width="40" height="40" alt="GTK" />&nbsp;
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="40" height="40" alt="Android" />&nbsp;
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code" />&nbsp;
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Neovim-mark.svg/1280px-Neovim-mark.svg.png?_=20150131093814" width="40" height="40" alt="Neovim" />&nbsp;
+          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="Git" />&nbsp;
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40" height="40" alt="Linux" />
-          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40" height="40" alt="Git" />
         </div>
 
         <br />
@@ -102,23 +104,21 @@ printf("Thanks for dropping by, hope you find some of my work interesting.\n");<
 
         <br />
 
-        <ul class="contact-links">
+        <ul style="list-style:none;padding-left:0;">
           <li>📫 How to reach me: <a href="mailto:limzhixuandev@gmail.com">limzhixuandev@gmail.com</a></li>
           <li>🔗 My website: <a href="https://limzhixuan.com/" target="_blank">https://limzhixuan.com/</a></li>
-          <li>📷 Project showcase: <a href="https://instagram.com/lzxuandev" target="_blank">https://instagram.com/lzxuandev/</a></li>
+          <li>📷 Project showcase: <a href="https://www.instagram.com/lzxuandev/" target="_blank">https://instagram.com/lzxuandev</a></li>
           <li>🌱 Currently study at UTAR <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click here to check it out</a></li>
         </ul>
+
+        <br />
 
       </article>
     </main>
 
   </div>
 
-  <script>
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('open');
-    }
-  </script>
+
 
 </body>
 </html>
