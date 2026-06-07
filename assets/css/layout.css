@@ -157,7 +157,16 @@
     margin-top: 2.5rem;
   }
 
+  .hero-section {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
   .hero-image {
-    width: 140px;
+    width: 120px;
   }
 }

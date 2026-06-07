@@ -3,14 +3,6 @@
   margin-bottom: 5rem;
 }
 
-.list-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: #bbf7d0;
-  opacity: 0.8;
-}
-
 .list-section {
   margin-bottom: 2.5rem;
 }
@@ -135,10 +127,15 @@
   }
 
   .list-item {
-    width: 110px;
+    width: calc((100vw - 62px) / 3.5);
   }
 
   .list-item-title {
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 }

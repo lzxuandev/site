@@ -280,6 +280,7 @@
         { title: '吃土', image: 'https://m.media-amazon.com/images/I/81tKwGVSY4L._AC_UF1000,1000_QL80_.jpg' },
         { title: '雪洞', image: 'https://www.cite.com.my/images/p_download/1198449.jpg' },
         { title: '深度工作', image: 'https://m.media-amazon.com/images/I/71pqZChaJkL._AC_UF894,1000_QL80_.jpg' },
+        { title: '你一生的故事', image: 'https://book.goldenhouse.com.my/wp-content/uploads/2023/03/niyishengdegushi-820x820.jpg'},
       ],
     },
   ];

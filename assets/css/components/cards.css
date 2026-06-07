@@ -180,11 +180,16 @@
   }
 
   .github-stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .about-list {
     padding-left: 1rem;
     font-size: 0.8125rem;
+  }
+
+  .skill-badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
   }
 }
