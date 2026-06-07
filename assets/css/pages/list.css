@@ -1,0 +1,126 @@
+.main-list {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.list-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #bbf7d0;
+  opacity: 0.8;
+}
+
+.list-section {
+  margin-bottom: 2.5rem;
+}
+
+.list-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.list-scroll-wrapper {
+  position: relative;
+  margin: 0 24px;
+}
+
+.list-scroll-container {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 0.25rem 0;
+}
+
+.list-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.list-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #1a1a1a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background 0.2s;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-arrow:hover {
+  background: #333;
+}
+
+.list-scroll-wrapper:hover .list-arrow {
+  opacity: 1;
+}
+
+.list-arrow-left {
+  left: -24px;
+}
+
+.list-arrow-right {
+  right: -24px;
+}
+
+.list-arrow svg {
+  width: 22px;
+  height: 22px;
+}
+
+.list-item {
+  flex-shrink: 0;
+  width: 140px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.list-item:hover {
+  transform: scale(1.05);
+}
+
+.list-item-cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 55%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.list-item-icon {
+  width: 36px;
+  height: 36px;
+  opacity: 0.25;
+}
+
+.list-item-title {
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

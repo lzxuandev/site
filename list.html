@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lzx | Projects</title>
+  <title>lzx | List</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,10 +12,9 @@
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components/navbar.css" />
-  <link rel="stylesheet" href="assets/css/components/socials.css" />
-  <link rel="stylesheet" href="assets/css/pages/projects.css" />
+  <link rel="stylesheet" href="assets/css/pages/list.css" />
   <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg" />
-  <script src="assets/js/pages/projects.js" defer></script>
+  <script src="assets/js/pages/list.js?v=2" defer></script>
 </head>
 <body>
 
@@ -33,21 +32,21 @@
           <li>
             <a href="blog.html">Blog</a>
           </li>
-          <li class="active">
+          <li>
             <a href="projects.html">Projects</a>
+          </li>
+          <li class="active">
+            <a href="list.html">List</a>
             <div class="nav-active-bg"></div>
             <div class="nav-active-glow"></div>
-          </li>
-          <li>
-            <a href="list.html">List</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main main-projects">
-      <h1 class="projects-title">Projects</h1>
-      <div class="projects-grid" id="projects-list"></div>
+    <main class="main main-list">
+      <h1 class="list-title">List</h1>
+      <div id="list-content"></div>
     </main>
 
   </div>
