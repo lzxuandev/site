@@ -42,7 +42,7 @@
   border-color: hsla(0, 0%, 55%, 0.35);
   background: rgba(242, 242, 242, 0.03);
   opacity: 1;
-  transform: translateY(-4px);
+  transform: translateY(-0.25rem);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -84,8 +84,8 @@
 }
 
 .project-lang-dot {
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -120,8 +120,8 @@
 }
 
 .project-stat-icon {
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
 @media (max-width: 640px) {

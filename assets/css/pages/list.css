@@ -17,7 +17,7 @@
 
 .list-scroll-wrapper {
   position: relative;
-  margin: 0 24px;
+  margin: 0 1.5rem;
 }
 
 .list-scroll-container {
@@ -37,8 +37,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   border: none;
   background: #1a1a1a;
@@ -62,21 +62,21 @@
 }
 
 .list-arrow-left {
-  left: -24px;
+  left: -1.5rem;
 }
 
 .list-arrow-right {
-  right: -24px;
+  right: -1.5rem;
 }
 
 .list-arrow svg {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
 }
 
 .list-item {
   flex-shrink: 0;
-  width: 140px;
+  width: 8.75rem;
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s;
@@ -102,8 +102,8 @@
 }
 
 .list-item-icon {
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   opacity: 0.25;
 }
 
@@ -127,7 +127,7 @@
   }
 
   .list-item {
-    width: calc((100vw - 62px) / 3.5);
+    width: calc((100vw - 3.875rem) / 3.5);
   }
 
   .list-item-title {

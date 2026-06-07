@@ -104,12 +104,12 @@
 
 .gh-card:hover {
   box-shadow: 0 0 3px rgb(140, 140, 140);
-  transform: translateY(-1px);
+  transform: translateY(-0.0625rem);
 }
 
 .gh-card-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   opacity: 0.5;
 }
 
@@ -164,8 +164,8 @@
 }
 
 .gh-lang-dot {
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   flex-shrink: 0;
 }

@@ -20,8 +20,8 @@
 }
 
 .header-social-icon {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .socials {
@@ -35,7 +35,7 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  padding: 5px;
+  padding: 0.3125rem;
   opacity: 0.6;
   transition: opacity 0.5s;
   color: hsl(0, 0%, 55%);
@@ -46,8 +46,8 @@
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 @media (max-width: 640px) {
