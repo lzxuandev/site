@@ -129,6 +129,25 @@
 
 .footer-made { opacity: 0.9; }
 
+::view-transition-old(root) {
+  animation: vt-out 0.35s ease-in-out both;
+}
+::view-transition-new(root) {
+  animation: vt-in 0.35s ease-in-out both;
+}
+@keyframes vt-out {
+  to {
+    transform: translateX(-40px) scale(0.96);
+    opacity: 0;
+  }
+}
+@keyframes vt-in {
+  from {
+    transform: translateX(40px) scale(0.96);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .two-column {
     flex-direction: column;
