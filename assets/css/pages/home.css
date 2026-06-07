@@ -30,3 +30,18 @@
   color: transparent;
   margin-bottom: 1.5rem;
 }
+
+@media (max-width: 640px) {
+  .hero-name {
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  .hero-tags {
+    font-size: 18px;
+  }
+
+  .hero-desc {
+    font-size: 0.875rem;
+  }
+}

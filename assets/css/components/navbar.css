@@ -59,3 +59,10 @@
   pointer-events: none;
 }
 
+@media (max-width: 640px) {
+  .navbar a {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.6875rem;
+  }
+}
+

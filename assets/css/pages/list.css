@@ -124,3 +124,21 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@media (max-width: 640px) {
+  .list-arrow {
+    display: none;
+  }
+
+  .list-scroll-wrapper {
+    margin: 0;
+  }
+
+  .list-item {
+    width: 110px;
+  }
+
+  .list-item-title {
+    font-size: 0.6875rem;
+  }
+}

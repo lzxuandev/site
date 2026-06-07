@@ -169,3 +169,22 @@
   border-radius: 50%;
   flex-shrink: 0;
 }
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1rem 0.75rem;
+  }
+
+  .github-stats {
+    padding: 1rem;
+  }
+
+  .github-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-list {
+    padding-left: 1rem;
+    font-size: 0.8125rem;
+  }
+}

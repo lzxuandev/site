@@ -49,3 +49,14 @@
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 640px) {
+  .socials {
+    gap: 0.75rem;
+  }
+
+  .social-link {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

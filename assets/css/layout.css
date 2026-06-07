@@ -139,3 +139,25 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .main-home {
+    margin-top: 3rem;
+  }
+
+  .main-blog,
+  .main-projects,
+  .main-list {
+    margin-top: 2.5rem;
+  }
+
+  .hero-image {
+    width: 140px;
+  }
+}

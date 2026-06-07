@@ -123,3 +123,22 @@
 .blog-content .contact-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 640px) {
+  .blog-content {
+    font-size: 0.875rem;
+  }
+
+  .blog-content h1 {
+    font-size: 1.375rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .blog-content pre {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+}
