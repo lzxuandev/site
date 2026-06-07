@@ -53,7 +53,7 @@ new Typed('#typed-text', {
   strings: ["I'm ZhiXuan"],
   typeSpeed: 90,
   backSpeed: 50,
-  backDelay: 3000,
+  backDelay: 1500,
   loop: true,
-  showCursor: true,
+  showCursor: false,
 });
