@@ -261,7 +261,7 @@
         { title: 'The Walking Dead', image: 'https://upload.wikimedia.org/wikipedia/en/0/0e/TheWalkingDeadPoster.jpg'},
         { title: 'Sherlock', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqbkWE9oLI8LNuwNkbNx02MlXhYXYvzLE9A&s' },
         { title: 'To Us, From Us', image: '' },
-        { title: 'WandaVision', image: '' },
+        { title: 'WandaVision', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7l5fnpdMP1Mb23WhV7Qd2765UYtOKVxfQ3wQ1Dw_KTE6zt6B4jrY7yD-o71sRXUSwrqEU-fq6WkNbKt-IjzBTz1-NK0FPN9CNcwMwDQ&s=10' },
         { title: 'Three-Body', image: '' },
         { title: 'Put Your Head on My Shoulder', image: 'https://upload.wikimedia.org/wikipedia/zh/4/42/Put_your_head_on_my_shoulder.jpg' },
 
@@ -271,7 +271,7 @@
       id: 'books',
       title: 'Books',
       items: [
-        { title: 'Flowers for Algernon', image: '' },
+        { title: 'Flowers for Algernon', image: 'https://m.media-amazon.com/images/I/819dTM9Lz5L._UF1000,1000_QL80_.jpg' },
         { title: 'Limitless', image: 'https://m.media-amazon.com/images/I/71EXYqf6EKL._AC_UF1000,1000_QL80_.jpg' },
         { title: '不便的便利店', image: 'https://www.cite.com.my/images/p_download/1291738.png' },
         { title: '焦虑的人', image: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597575031l/49127718.jpg' },
