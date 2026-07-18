@@ -7,6 +7,8 @@
         { title: 'Steins;Gate', image: '' },
         { title: 'JoJo\'s Bizarre Adventure', image: '' },
         { title: 'Death Note', image: '' },
+        { title: 'Attack on Titan', image: ''},
+        { title: 'Gyakkyō Burai Kaiji: Ultimate Survivor', image: ''},
         { title: 'Cyberpunk: Edgerunners', image: ''},
         { title: 'One Punch Man', image: '' },
         { title: 'Solo Leveling', image: '' },
